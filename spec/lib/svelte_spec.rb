@@ -107,7 +107,7 @@ describe Svelte do
       end
 
       context 'with basic authentication' do
-        let(:url_with_auth) { 'http://user:pass@www.example.com/petstore.json' }
+        let(:url_with_auth) { 'http://www.example.com/petstore.json' }
         
         it 'sets the correct headers' do
           stub_request(:any, url_with_auth)
